@@ -1,0 +1,143 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "view"
+	"i18n.bundleName": "logInFrm"
+	"i18n.keyPrefix": "returnsManagerInner"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:19:p, par l:::p {seq l {comp panel2:::p::p, space :::x, comp panel3:::p::p}, comp panel1:::::x, comp scrollPane1::::781:x}, space ::13:x}}"
+			"$verticalGroup": "par l {seq l {space :p:14:p, comp panel1:::p::p, space :::p, comp scrollPane1:::p:315:p, space :::p, par l:::p {comp panel2:::::x, comp panel3:::::x}, space ::48:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": new FormMessage( null, "returnsManagerInner.this.title" )
+			"closable": true
+			"iconifiable": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:101:p, comp label1:::p:62:p, space :::p, comp returnsStateJCB:::p:116:p, space :p:35:p, comp button1:::p::p, space :::x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp label1::b:p::p, comp returnsStateJCB::b:p::p, comp button1::b:p::p}, space ::18:x}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "i18nKey=returnsManagerInner.panel1.border" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": new FormMessage( null, "returnsManagerInner.label1.text" )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "returnsStateJCB"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": new FormMessage( null, "returnsManagerInner.button1.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "returnsTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( "" )
+							add( "" )
+							add( "" )
+							add( "" )
+							add( "" )
+							add( "" )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( "" )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "编号" )
+						add( "商品名称" )
+						add( "商品类型" )
+						add( "顾客编号" )
+						add( "创建时间" )
+						add( "状态" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "returnsTableMousePressed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:42:p, par l {comp label2::l:p:62:p, comp label3::l:p::p}, space :p:4:p, par l:::p {comp returnsStateJCB2::::116:x, comp examineIdTxt::::116:x}, space s:::p, comp button2:::p::p, space ::82:x}}"
+				"$verticalGroup": "par l {seq l {space :p:5:p, par b {comp label3::b:p::p, comp examineIdTxt::b:p::p}, space :::p, par t {comp button2:::p::p, par l {seq l {space :4:4:p, comp label2:::p::p}, comp returnsStateJCB2:::p::p}}, space ::112:x}}"
+			} ) {
+				name: "panel2"
+				"border": new javax.swing.border.TitledBorder( "i18nKey=returnsManagerInner.panel2.border" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": new FormMessage( null, "returnsManagerInner.label2.text" )
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "returnsStateJCB2"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": new FormMessage( null, "returnsManagerInner.button2.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": new FormMessage( null, "returnsManagerInner.label3.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "examineIdTxt"
+					"editable": false
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {par l {seq l {space :p:41:p, comp label4:::p::p, space u:::p, comp deleteIdTxt:::p:126:p}, seq l {space :p:103:p, comp button3:::p::p}}, space ::157:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par b {comp label4::b:p::p, comp deleteIdTxt::b:p::p}, space :p:33:p, comp button3:::p::p, space ::84:x}}"
+			} ) {
+				name: "panel3"
+				"border": new javax.swing.border.TitledBorder( "i18nKey=returnsManagerInner.panel3.border" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": new FormMessage( null, "returnsManagerInner.label4.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "deleteIdTxt"
+					"editable": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": new FormMessage( null, "returnsManagerInner.button3.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 825, 680 )
+		} )
+	}
+}

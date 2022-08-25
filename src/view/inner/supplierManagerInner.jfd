@@ -1,0 +1,199 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "view"
+	"i18n.bundleName": "logInFrm"
+	"i18n.keyPrefix": "supplierManagerInner"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :::p, par l {comp scrollPane1::::1133:x, seq {comp panel1:::p::p, space :::p, comp panel2:::p::p, space :::p, comp panel3:::::x}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1:::p::p, space :::p, par l:::p {comp panel2:::::x, comp panel1:::::x, comp panel3:::::x}, space ::38:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": new FormMessage( null, "supplierManagerInner.this.title" )
+			"iconifiable": true
+			"closable": true
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "supplierTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						add( new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					}, new java.util.Vector {
+						add( "编号" )
+						add( "地址" )
+						add( "联系方式" )
+						add( "联系号码" )
+						add( "名称" )
+						add( "备注" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+						add( false )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mousePressed", "supplierTableMousePressed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {comp label3:::p::p, comp label2::l:p::p, comp label4::t:p::p, comp label5::t:p::p, comp label1::t:p::p}, space :::p, par l {comp addContactTxt::l:p:174:p, comp addNumberTxt:::p:174:p, comp addNameTxt:::p:174:p, comp addRemarkTxt::l:p:174:p, comp addAddressTxt::t:p:174:p}, space s:::p, comp button1:::p::p, space ::11:x}}"
+				"$verticalGroup": "par l {seq l {space :::p, par l:::p {seq {par l {comp label1:::p::p, comp addAddressTxt::l:p::p}, space :p:8:p, par b {comp label2::b:p::p, comp addContactTxt::b:p::p}, space :::p, par b {comp label3::b:p::p, comp addNumberTxt::b:p::p}, space :::p, par b {comp label4::b:p:15:p, comp addNameTxt::b:p::p}, space :::p, par b {comp label5::b:p::p, comp addRemarkTxt::b:p::p}}, comp button1:::::x}, space :0:46:x}}"
+			} ) {
+				name: "panel1"
+				"border": new javax.swing.border.TitledBorder( "i18nKey=supplierManagerInner.panel1.border" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": new FormMessage( null, "supplierManagerInner.label1.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": new FormMessage( null, "supplierManagerInner.label2.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": new FormMessage( null, "supplierManagerInner.label3.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label4"
+					"text": new FormMessage( null, "supplierManagerInner.label4.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": new FormMessage( null, "supplierManagerInner.label5.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "addAddressTxt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "addContactTxt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "addNumberTxt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "addNameTxt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "addRemarkTxt"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": new FormMessage( null, "supplierManagerInner.button1.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :::p, par l {par l {comp label8:::p::p, comp label7::l:p::p, comp label9::t:p::p, comp label10::t:p::p, comp label6::t:p::p}, comp label11::t:p::p}, space :::p, par l {par l {comp updateContactTxt::l:p:174:p, comp updateNumberTxt:::p:174:p, comp updateNameTxt:::p:174:p, comp updateRemarkTxt::l:p:174:p, comp updateAddressTxt::t:p:174:p}, comp updateIdTxt::l:p:174:p}, space s:::p, comp button2:::p::p, space ::46:x}}"
+				"$verticalGroup": "par l {seq {par l {seq t {space ::12:x, par b {comp updateIdTxt::b:p::p, comp label11::b:p::p}, space u:::p, par l {comp label6:::p::p, comp updateAddressTxt::l:p::p}, space :p:8:p, par b {comp label7::b:p::p, comp updateContactTxt::b:p::p}, space :::p, par b {comp label8::b:p::p, comp updateNumberTxt::b:p::p}, space :::p, par b {comp label9::b:p:15:p, comp updateNameTxt::b:p::p}, space :::p, par b {comp label10::b:p::p, comp updateRemarkTxt::b:p::p}}, seq {space :p:17:p, comp button2::::159:x}}, space :::p}}"
+			} ) {
+				name: "panel2"
+				"border": new javax.swing.border.TitledBorder( "i18nKey=supplierManagerInner.panel2.border" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": new FormMessage( null, "supplierManagerInner.label6.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label7"
+					"text": new FormMessage( null, "supplierManagerInner.label7.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": new FormMessage( null, "supplierManagerInner.label8.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": new FormMessage( null, "supplierManagerInner.label9.text" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": new FormMessage( null, "supplierManagerInner.label10.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "updateAddressTxt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "updateContactTxt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "updateNumberTxt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "updateNameTxt"
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "updateRemarkTxt"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": new FormMessage( null, "supplierManagerInner.label11.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "updateIdTxt"
+					"editable": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": new FormMessage( null, "supplierManagerInner.button2.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:79:p, par l:::p {comp button3:::::x, seq {comp label12:::p::p, space :4:4:p, comp deleteIdTxt:::p:174:p}}, space ::92:x}}"
+				"$verticalGroup": "par l {seq l {space :p:26:p, par l {seq l {space :3:3:p, comp label12:::p::p}, comp deleteIdTxt:::p::p}, space s:::p, comp button3:::p:106:p, space ::16:x}}"
+			} ) {
+				name: "panel3"
+				"border": new javax.swing.border.TitledBorder( "i18nKey=supplierManagerInner.panel3.border" )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": new FormMessage( null, "supplierManagerInner.label12.text" )
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "deleteIdTxt"
+					"editable": false
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": new FormMessage( null, "supplierManagerInner.button3.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1165, 720 )
+		} )
+	}
+}

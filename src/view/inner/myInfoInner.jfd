@@ -1,0 +1,55 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "view"
+	"i18n.bundleName": "logInFrm"
+	"i18n.keyPrefix": "myInfoInner"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:16:p, par t {comp label1::t:p::p, comp label2::t:p::p, comp label3:::p::p}, space :::p, par l {comp userIdTxt::l:p:129:p, comp userRoleTxt::l:p:129:p, comp userRealNameTxt::l:p:129:p}}, seq l {space :p:50:p, comp label4:::p:125:p}, seq l {space :p:60:p, comp button1:::p::p}}, space ::29:x}}"
+			"$verticalGroup": "par l {seq t {space :::p, comp label4::::155:x, space s:::p, par b {comp label1::b:p::p, comp userIdTxt::b:p::p}, space :::p, par b {comp label2::b:p::p, comp userRoleTxt::b:p::p}, space :::p, par b {comp label3::b:p::p, comp userRealNameTxt::b:p::p}, space s:::p, comp button1:::p:47:p, space :p:58:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": new FormMessage( null, "myInfoInner.this.title" )
+			"closable": true
+			"iconifiable": true
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userIdTxt"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "myInfoInner.button1.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "myInfoInner.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "myInfoInner.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userRoleTxt"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "myInfoInner.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userRealNameTxt"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "myInfoInner.label4.text" )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/user/userImg.jpg" )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 250, 410 )
+		} )
+	}
+}

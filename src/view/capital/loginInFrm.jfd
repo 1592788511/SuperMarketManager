@@ -1,0 +1,93 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "view"
+	"i18n.bundleName": "logInFrm"
+	"i18n.keyPrefix": "loginInFrm"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :0:0:x, comp desktopPane1:::p:490:p}}"
+			"$verticalGroup": "par l {seq l {comp desktopPane1:::p:355:p, space :0:0:x}}"
+		} ) {
+			name: "this"
+			"title": "Login"
+			"resizable": false
+			"font": new java.awt.Font( "黑体", 0, 30 )
+			"defaultCloseOperation": 3
+			add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class javax.swing.JDesktopPane ) ) {
+				name: "desktopPane1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": new FormMessage( null, "loginInFrm.label1.text" )
+					"font": new java.awt.Font( "黑体", 0, 36 )
+				}, new FormLayoutConstraints( null ) {
+					"width": 420
+					"height": 90
+					"x": 65
+					"y": 50
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": new FormMessage( null, "loginInFrm.label2.text" )
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+				}, new FormLayoutConstraints( null ) {
+					"width": 110
+					"height": 33
+					"x": 60
+					"y": 140
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userNameText"
+				}, new FormLayoutConstraints( null ) {
+					"width": 179
+					"height": 21
+					"x": 170
+					"y": 150
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "passWordText"
+				}, new FormLayoutConstraints( null ) {
+					"width": 179
+					"height": 21
+					"x": 170
+					"y": 195
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": new FormMessage( null, "loginInFrm.label3.text" )
+					"font": new java.awt.Font( "Microsoft YaHei UI", 0, 18 )
+				}, new FormLayoutConstraints( null ) {
+					"width": 100
+					"height": 24
+					"x": 65
+					"y": 190
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": new FormMessage( null, "loginInFrm.button1.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				}, new FormLayoutConstraints( null ) {
+					"width": 57
+					"height": 23
+					"x": 105
+					"y": 255
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": new FormMessage( null, "loginInFrm.button2.text" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				}, new FormLayoutConstraints( null ) {
+					"width": 57
+					"height": 23
+					"x": 265
+					"y": 255
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 105 )
+			"size": new java.awt.Dimension( 475, 345 )
+		} )
+	}
+}

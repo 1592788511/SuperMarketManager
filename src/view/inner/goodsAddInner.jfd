@@ -1,0 +1,113 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "view"
+	"i18n.bundleName": "logInFrm"
+	"i18n.keyPrefix": "goodsAddInner"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {par l:l {seq l {par l {seq {space :p:61:p, comp label4:::p::p}, seq t {space :::p, comp label5:::p::p}}, space :::p, par l:::p {comp goodsUnitTxt::::200:x, comp goodsTypeIdJCB::l::200:x}}, seq t {space :::p, par t {seq t {par t {comp label2:::p::p, comp label1:::p::p, comp label3::t:p::p}, space :::p, par l:::p {comp goodsNameTxt::::200:x, comp goodsProducerTxt::l::200:x, comp goodsMoudelTxt::::200:x}}, seq t {par t {comp label6::t:p::p, comp label7::t:p::p, comp label8::t:p::p, comp label10::t:p::p, comp label9::t:p::p, comp label11::t:p::p}, space :::p, par l {par l:::p {comp goodsSellPriceTxt::l::200:x, comp goodsSaleNumTxt::::200:x}, comp goodsInventerQTxt::l:p:200:p, comp goodsLastPurTxt::l:p:200:p, comp goodsPurTxt::l:p:200:p, comp goodsRemarkTxt:::p:200:p}}}}}, seq l {space :p:89:p, comp button1:::p::p, space :p:52:p, comp button2:::p::p}}, space ::78:x}}"
+			"$verticalGroup": "par l {seq l {space :p:19:p, par b {comp label1::b:p::p, comp goodsNameTxt::b:p::p}, space :::p, par b {comp label2::b:p::p, comp goodsProducerTxt::b:p::p}, space :::p, par l {comp label3:::p::p, comp goodsMoudelTxt:::p::p}, space :::p, par b {comp label4::b:p::p, comp goodsUnitTxt::b:p::p}, space :::p, par b {comp goodsTypeIdJCB::b:p:23:p, comp label5::b:p::p}, space :p:9:p, par l {seq {par b {comp label6::b:p::p, comp goodsInventerQTxt::b:p::p}, space :0:0:x}, seq {space :0:25:x, par b {comp label7::b:p::p, comp goodsLastPurTxt::b:p::p}}}, space :p:9:p, par b {comp goodsPurTxt::b:p::p, comp label8::b:p::p}, space :::p, par b {comp goodsSellPriceTxt::b:p::p, comp label9::b:p::p}, space :::p, par b {comp goodsSaleNumTxt::b:p::p, comp label10::b:p::p}, space :::p, par l {comp label11:::p::p, comp goodsRemarkTxt:::p::p}, space :p:31:p, par b {comp button2::b:p::p, comp button1::b:p::p}, space ::56:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": new FormMessage( null, "goodsAddInner.this.title" )
+			"closable": true
+			"iconifiable": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "goodsAddInner.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "goodsAddInner.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "goodsAddInner.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "goodsAddInner.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "goodsAddInner.label5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "goodsAddInner.label6.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "goodsAddInner.label7.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": new FormMessage( null, "goodsAddInner.label8.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": new FormMessage( null, "goodsAddInner.label9.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": new FormMessage( null, "goodsAddInner.label10.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": new FormMessage( null, "goodsAddInner.label11.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsNameTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsProducerTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsMoudelTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsUnitTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsPurTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsLastPurTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsInventerQTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsSellPriceTxt"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsSaleNumTxt"
+				"editable": false
+				"text": new FormMessage( null, "goodsAddInner.goodsSaleNumTxt.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "goodsAddInner.button1.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "goodsTypeIdJCB"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "goodsAddInner.button2.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "goodsRemarkTxt"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 415, 455 )
+		} )
+	}
+}

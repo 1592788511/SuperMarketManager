@@ -1,0 +1,141 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "view"
+	"i18n.bundleName": "logInFrm"
+	"i18n.keyPrefix": "MainFrm"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "Main"
+			"background": new java.awt.Color( 255, 255, 255, 255 )
+			"defaultCloseOperation": 3
+			add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class javax.swing.JDesktopPane ) ) {
+				name: "table"
+				"background": new java.awt.Color( 0, 0, 0, 255 )
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar1"
+					add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+						name: "menu1"
+						"text": new FormMessage( null, "MainFrm.menu1.text" )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem3"
+							"text": new FormMessage( null, "MainFrm.menuItem3.text" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem2"
+							"text": new FormMessage( null, "MainFrm.menuItem2.text" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem2ActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JMenuItem" ) {
+							name: "menuItem1"
+							"text": new FormMessage( null, "MainFrm.menuItem1.text" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+						} )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"width": 40
+					"height": 23
+					"x": 0
+					"y": 0
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp button1:::p:125:p, space :::p, comp button2:::p:125:p, space ::13:x}}"
+					"$verticalGroup": "par l {seq {space :::x, par b {comp button1::b:p:82:p, comp button2::b:p:82:p}, space :p:211:p}}"
+				} ) {
+					name: "panel1"
+					"border": new javax.swing.border.TitledBorder( "i18nKey=MainFrm.panel1.border" )
+					"background": new java.awt.Color( 0, 0, 0, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": new FormMessage( null, "MainFrm.button1.text" )
+						"background": new java.awt.Color( 0, 0, 0, 255 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button2"
+						"text": new FormMessage( null, "MainFrm.button2.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button10ActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 0
+					"y": 30
+					"width": 285
+					"height": 130
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :p:39:p, comp button3:::p:198:p, space ::38:x}}"
+					"$verticalGroup": "par l {seq t {space ::17:x, comp button3:::p:72:p, space :p:17:p}}"
+				} ) {
+					name: "panel2"
+					"border": new javax.swing.border.TitledBorder( "i18nKey=MainFrm.panel2.border" )
+					"background": new java.awt.Color( 0, 0, 0, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button3"
+						"text": new FormMessage( null, "MainFrm.button3.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 0
+					"y": 165
+					"width": 285
+					"height": 130
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, comp button6:::p:125:p, space :::p, comp button5:::p:125:p, space ::13:x}}"
+					"$verticalGroup": "par l {seq l {space :p:14:p, par l:::p {comp button6::::88:x, comp button5::::88:x}, space :::x}}"
+				} ) {
+					name: "panel3"
+					"border": new javax.swing.border.TitledBorder( "i18nKey=MainFrm.panel3.border" )
+					"background": new java.awt.Color( 0, 0, 0, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button6"
+						"text": new FormMessage( null, "MainFrm.button6.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button6ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button5"
+						"text": new FormMessage( null, "MainFrm.button5.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button5ActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 0
+					"y": 300
+					"width": 285
+					"height": 135
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq t {space :::x, comp button7:::p:119:p, space :::p, comp button8:::p:125:p, space :p:14:p}}"
+					"$verticalGroup": "par l {seq t {space ::19:x, par l:::p {comp button7::::86:x, comp button8::::86:x}, space :::p}}"
+				} ) {
+					name: "panel4"
+					"border": new javax.swing.border.TitledBorder( "i18nKey=MainFrm.panel4.border" )
+					"background": new java.awt.Color( 0, 0, 0, 255 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button7"
+						"text": new FormMessage( null, "MainFrm.button7.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button7ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button8"
+						"text": new FormMessage( null, "MainFrm.button8.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button8ActionPerformed", true ) )
+					} )
+				}, new FormLayoutConstraints( null ) {
+					"x": 0
+					"y": 440
+					"width": 285
+					"height": 135
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 35, 0 )
+			"size": new java.awt.Dimension( 1460, 620 )
+		} )
+	}
+}

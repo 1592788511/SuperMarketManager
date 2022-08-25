@@ -1,0 +1,29 @@
+JFDML JFormDesigner: "7.0.5.1.409" Java: "11.0.11" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundlePackage": "view"
+	"i18n.bundleName": "logInFrm"
+	"i18n.keyPrefix": "aboutUsInner"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::x, comp label1:::p:610:p, space :p:287:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p:405:p, space ::24:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": "AboutUs"
+			"closable": true
+			"iconifiable": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "aboutUsInner.label1.text" )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/aboutUs/QLU.jpg" )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 15 )
+			"size": new java.awt.Dimension( 615, 455 )
+		} )
+	}
+}
